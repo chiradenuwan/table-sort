@@ -20,32 +20,33 @@
           <div class="dropdown-menu">
             <ul style="list-style: none">
               <li (click)="remove($event)">
-                <input id="checkid" type="checkbox" value="col1">
-                <label class="ml-3 font-weight-light" for="checkid">Id</label>
+                <input id="checkid" ngbTooltip="Hide Column Id" type="checkbox" value="col1">
+                <label class="ml-3 font-weight-light" for="checkid" ngbTooltip="Hide Column Id">Id</label>
               </li>
               <li (click)="remove($event)">
-                <input id="name" type="checkbox" value="col2"/>
-                <label class="ml-3 font-weight-light" for="name">Name</label>
+                <input id="name" ngbTooltip="Hide Column Name" type="checkbox" value="col2"/>
+                <label class="ml-3 font-weight-light" for="name" ngbTooltip="Hide Column Name">Name</label>
               </li>
               <li (click)="remove($event)">
-                <input id="postion" type="checkbox" value="col3"/>
-                <label class="ml-3 font-weight-light" for="postion">Position</label>
+                <input id="postion" ngbTooltip="Hide Column Position" type="checkbox" value="col3"/>
+                <label class="ml-3 font-weight-light" for="postion" ngbTooltip="Hide Column Position">Position</label>
               </li>
               <li (click)="remove($event)">
-                <input id="office" type="checkbox" value="col4"/>
-                <label class="ml-3 font-weight-light" for="office">Office</label>
+                <input id="office" ngbTooltip="Hide Column Office" type="checkbox" value="col4"/>
+                <label class="ml-3 font-weight-light" for="office" ngbTooltip="Hide Column Office">Office</label>
               </li>
               <li (click)="remove($event)">
-                <input id="age" type="checkbox" value="col5"/>
-                <label class="ml-3 font-weight-light" for="age">Age</label>
+                <input id="age" ngbTooltip="Hide Column Age" type="checkbox" value="col5"/>
+                <label class="ml-3 font-weight-light" for="age" ngbTooltip="Hide Column Age">Age</label>
               </li>
               <li (click)="remove($event)">
-                <input id="startdate" type="checkbox" value="col6"/>
-                <label class="ml-3 font-weight-light" for="startdate">Start date</label>
+                <input id="startdate" ngbTooltip="Hide Column Start date" type="checkbox" value="col6"/>
+                <label class="ml-3 font-weight-light" for="startdate" ngbTooltip="Hide Column Start date">Start
+                  date</label>
               </li>
               <li (click)="remove($event)">
-                <input id="salary" type="checkbox" value="col7"/>
-                <label class="ml-3 font-weight-light" for="salary">Salary</label>
+                <input id="salary" ngbTooltip="Hide Column Salary" type="checkbox" value="col7"/>
+                <label class="ml-3 font-weight-light" for="salary" ngbTooltip="Hide Column Salary">Salary</label>
               </li>
             </ul>
           </div>
@@ -56,13 +57,14 @@
       <table class="table tabledata table-striped table-hover" id="myTable2">
         <thead>
         <tr>
-          <th [hidden]="col1==='col1'">Id <i (click)="sortTable(0)" class="fa fa-sort"></i></th>
-          <th [hidden]="col2==='col2'">Name <i (click)="sortTable(1)" class="fa fa-sort"></i></th>
-          <th [hidden]="col3==='col3'">Position <i (click)="sortTable(2)" class="fa fa-sort"></i></th>
-          <th [hidden]="col4==='col4'">Office <i (click)="sortTable(3)" class="fa fa-sort"></i></th>
-          <th [hidden]="col5==='col5'">Age <i (click)="sortTable(4)" class="fa fa-sort"></i></th>
-          <th [hidden]="col6==='col6'">Start date <i (click)="sortTable(5)" class="fa fa-sort"></i></th>
-          <th [hidden]="col7==='col7'">Salary <i (click)="sortTable(6)" class="fa fa-sort"></i></th>
+          <th [hidden]="col1==='col1'">Id <i (click)="sortTable(0)" class="fa fa-sort" ngbTooltip="Sort"></i></th>
+          <th [hidden]="col2==='col2'">Name <i (click)="sortTable(1)" class="fa fa-sort" ngbTooltip="Sort"></i></th>
+          <th [hidden]="col3==='col3'">Position <i (click)="sortTable(2)" class="fa fa-sort" ngbTooltip="Sort"></i></th>
+          <th [hidden]="col4==='col4'">Office <i (click)="sortTable(3)" class="fa fa-sort" ngbTooltip="Sort"></i></th>
+          <th [hidden]="col5==='col5'">Age <i (click)="sortTable(4)" class="fa fa-sort" ngbTooltip="Sort"></i></th>
+          <th [hidden]="col6==='col6'">Start date <i (click)="sortTable(5)" class="fa fa-sort" ngbTooltip="Sort"></i>
+          </th>
+          <th [hidden]="col7==='col7'">Salary <i (click)="sortTable(6)" class="fa fa-sort" ngbTooltip="Sort"></i></th>
         </tr>
         </thead>
         <tbody>
@@ -78,12 +80,12 @@
         </tbody>
       </table>
     </div>
-  <!--  <ngb-pagination
+    <ngb-pagination
       [(page)]="page"
       [collectionSize]="person.length"
       [ellipses]="false"
       [maxSize]="3" [pageSize]="pageSize" [rotate]="true"
-      style="position: relative;float: right;"></ngb-pagination>-->
+      style="position: relative;float: right;"></ngb-pagination>
 
 
   </div>
